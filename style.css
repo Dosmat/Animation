@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans',sans-serif;
+    overflow: hidden;
+}
+.animation{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.img1{
+    width: 100%;
+    height: 720px;
+    position: absolute;
+    top: 0;
+    transition: 5s;
+}
+.img2{
+    width: 100%;
+    height: 720px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 5s;
+}
+.img3{
+    width: 100%;
+    height: 720px;
+    position: absolute;
+    top: 0;
+    animation-name: img3;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+    transition: 5s;
+}
+@keyframes img3 {
+    0% {top:0;}
+    100% {top:-600px;}
+}
+.img4{
+    width: 80%;
+    height: 680px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation-name: img4;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+    transition: 5s;
+}
+@keyframes img4 {
+    0% {top:0;}
+    100% {top:-600px;}
+}
+.img5{
+    width: 80%;
+    height: 720px;
+    position: absolute;
+    bottom: -720px;
+    right: 0;
+    z-index: 10;
+    animation-name: img5;
+    animation-duration: 4.5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse; 
+    transition: 5s;
+}
+@keyframes img5 {
+    0% {bottom: -720px;}
+    100% {bottom:-1440px;}
+}
+.img6{
+    width: 80%;
+    height: 650px;
+    position: absolute;
+    bottom: -720px;
+    right: 0;
+    z-index: 10;
+    animation-name: img6;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+    transition: 5s; 
+}
+@keyframes img6 {
+    0% {bottom: -720px;}
+    100% {bottom:-1440px;}
+}
+.img7{
+    width: 80%;
+    height: 650px;
+    position: absolute;
+    bottom: -720px;
+    right: 0;
+    z-index: 10;
+    animation-name: img7;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse; 
+    transition: 5s;
+}
+@keyframes img7 {
+    0% {bottom: -720px;}
+    100% {bottom:-1440px;}
+}
+.buttons{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+    animation-name: buttons;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse; 
+    transition: 5s;
+}
+@keyframes buttons {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.btn1{
+    position: absolute;
+    top: 50px;
+    right: 26%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.btn1:hover{
+    border-bottom: 3px solid #fff;
+}
+.btn2{
+    position: absolute;
+    top: 45px;
+    right: 2%;
+    text-decoration: none;
+    color: #6745A6;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.btn3{
+    position: absolute;
+    top: 570px;
+    left: 20%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.btn3:hover{
+    background-color: #fff;
+    color: #6745A6;
+}
+.icons{
+    position: absolute;
+    top:630px;
+    left: 10px;
+    color: #fff;
+    display: grid;
+    gap: 10px;
+    font-size: 18px;
+}
+.download{
+    position: absolute;
+    top: 690px;
+    left: 150px;
+    color: #fff;
+    text-decoration: none;
+}
+.til{
+    position: absolute;
+    top:680px;
+    right: 20px;
+}
+.til_a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 600;
+}
+.til_a:hover{
+    color: #fff;
+}
+.border{
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    padding: 0 4px;
+}
+.active{
+    color: #fff;
+}
+.clicked{
+    width: 80%;
+    position: absolute;
+    top: 30px;
+    left: 151px;
+    z-index: 0;
+    opacity: 0;
+    transition: 5s;
+}
+.back{
+    color: #fff;
+    font-size: 40px;
+}
+#ortga{
+    cursor: auto;
+}
+.clicked-text{
+    background-color: #fff;
+    padding:30px 80px 80px ;
+}
+.clicked-text h1{
+    text-align: center;
+    color: #6745A6;
+    margin-bottom: 20px;
+}
+.clicked-text p{
+    color: #6745A6;
+    font-size: 17px;
+}
+.about-text{
+    position: absolute;
+    width: 450px;
+    top: 100px;
+    left: 10%;
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px #000000a6;
+    z-index: 0;
+    opacity: 0;
+}
